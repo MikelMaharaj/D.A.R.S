@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DARS</string>
+
+    <string-array name="disaster_types_array">
+        <item>FLOOD</item>
+        <item>EARTHQUAKE</item>
+        <item>HURRICANE</item>
+        <item>FIRE</item>
+        <item>LANDSLIDE</item>
+        <item>TSUNAMI</item>
+        <item>GENERAL</item>
+    </string-array>
+</resources>
