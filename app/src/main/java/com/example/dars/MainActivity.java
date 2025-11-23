@@ -11,6 +11,7 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnViewReports;
     private Button btnSettings;
     private Button btnExit;
+    private TextView tvWelcome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,17 @@ public class MainActivity extends AppCompatActivity {
         btnExit.setOnClickListener(v -> exitApp());
 
         checkAndRequestSmsPermissions();
+
+
+
+        tvWelcome = findViewById(R.id.tvWelcome);
+        String username = getIntent().getStringExtra("USERNAME");
+
+        if (username != null && !username.isEmpty()) {
+            tvWelcome.setText("Welcome " + username + "!");
+        } else {
+            tvWelcome.setText("Welcome!");
+        }
     }
 
     private void exitApp() {

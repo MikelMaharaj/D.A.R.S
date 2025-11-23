@@ -1,45 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="24dp"
-    android:gravity="center"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    >
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="77dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/drlogo" />
 
     <TextView
         android:id="@+id/tvTitle"
-        android:text="Disaster Alert &amp; Response System (DARS)"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:gravity="center"
+        android:text="Disaster Alert and Response System (DARS)"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnSendAlert"
-        android:text="Send Alert"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="276dp"
+        android:layout_height="127dp"
+        app:srcCompat="@drawable/darsphoto2" />
 
-    <Button
-        android:id="@+id/btnViewReports"
-        android:text="View Reports"
+    <TextView
+        android:id="@+id/tvWelcome"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp" />
+        android:layout_height="44dp"
+        android:text="Welcome!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/btnSettings"
-        android:text="Settings"
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp" />
+        android:layout_height="30dp"
+        android:text="How Can We Help You?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        />
 
-    <Button
-        android:id="@+id/btnExit"
-        android:text="Exit"
+    <View
+        android:id="@+id/view6"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="34dp" />
+
+    <GridLayout
+        android:id="@+id/gridDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:alignmentMode="alignMargins"
+        android:background="@drawable/rounded_yellow_bg"
+        android:columnCount="2"
+
+        android:padding="10dp"
+        android:rowCount="2"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/btnSendAlert"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:text="Send Alert"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnViewReports"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:text="View Reports"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:text="Settings"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:text="Exit"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </GridLayout>
+
 </LinearLayout>

@@ -2,16 +2,18 @@ package com.example.dars;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.telephony.SmsManager;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.view.ViewGroup;
 
 public class SendAlertActivity extends AppCompatActivity {
 
