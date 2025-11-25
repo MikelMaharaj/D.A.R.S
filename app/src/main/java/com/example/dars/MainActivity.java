@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         tvWelcome = findViewById(R.id.tvWelcome);
         String username = getIntent().getStringExtra("USERNAME");
 
-        if (username != null && !username.isEmpty()) {
+        if (username != null && !username.isEmpty() && !username.equals("What's your name?")) {
             tvWelcome.setText("Welcome " + username + "!");
         } else {
             tvWelcome.setText("Welcome!");
