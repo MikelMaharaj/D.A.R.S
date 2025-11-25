@@ -50,7 +50,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="D.A.R.S aims to provide a reliable platform for disaster alerts and coordinating response efforts. wITH D.A.R.S, allows alerts can be issued, situations and  statuses monitored and relevant information will be provided to all connected authorities and individuals"
+        android:text="D.A.R.S aims to provide a reliable platform for disaster alerts and coordinating response efforts. with D.A.R.S, allows alerts can be issued, situations and  statuses monitored and relevant information will be provided to all connected authorities and individuals"
         android:textAlignment="center"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
